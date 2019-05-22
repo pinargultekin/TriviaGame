@@ -1,0 +1,32 @@
+body{
+text-align: center;
+background-image: url("../images/memphis-colorful.png");
+}
+h1{
+font-size: 90px;
+font-family: 'Permanent Marker', cursive;
+padding:20px;
+margin:0 auto;
+color:#75b8ef;
+}
+h2{
+font-size: 45px;
+font-family: 'Permanent Marker', cursive;
+color:#ef7975;
+}
+
+#question{
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+    color:#b288fc;
+}
+#choice1, #choice2, #choice3, #choice4{
+font-family: 'Caveat', cursive;
+font-size: 35px;
+color: #a9e5b9;
+}
+.card{
+    width: 150%;
+    margin: 20px;
+    padding:20px;
+}
