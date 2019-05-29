@@ -69,3 +69,19 @@ function ask() {
  //   clicked();
  // }
 };
+
+//Timer
+function startTimer() {
+  var timer = 25;
+  var interval = setInterval(function () {
+ 
+    document.getElementById("display-time").innerHTML = timer;
+    timer--;
+    if (timer === 0) {
+      clearInterval(interval);
+      document.getElementById("display-time").innerHTML = timer;
+      document.getElementById("game").innerHTML = askNext;
+    }
+  }, 1000);
+ };
+ 
