@@ -14,13 +14,13 @@ font-size: 45px;
 font-family: 'Permanent Marker', cursive;
 color:#ef7975;
 }
-
-#question{
+h3{
     font-family: 'Caveat', cursive;
     font-size: 45px;
     color:#b288fc;
 }
-#choice1, #choice2, #choice3, #choice4{
+
+#options{
 font-family: 'Caveat', cursive;
 font-size: 35px;
 color: #a9e5b9;
@@ -29,4 +29,8 @@ color: #a9e5b9;
     width: 150%;
     margin: 20px;
     padding:20px;
+}
+#wrapper{
+    width: auto 0;
+    
 }
