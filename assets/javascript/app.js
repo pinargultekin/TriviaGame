@@ -54,3 +54,18 @@ $("#start").on("click", function () {
   //timer starts count down
   startTimer();
 });
+
+//Loading questions and options
+function ask() {
+ //question call
+ $("#questions").html("<h3>" + questions[currentQuestion].question + "</h3>");
+
+ //options call
+ for (var i = 0; i < questions[currentQuestion].options.length; i++) {
+   $("#options").append('<label><input type="radio" name="option" class="choices" ' + i + ' "value="'
+     + questions[currentQuestion].options[i] + '  ">' + " " + questions[currentQuestion].options[i] + '</label>');
+ }
+ // if (userChoice !== null) {
+ //   clicked();
+ // }
+};
