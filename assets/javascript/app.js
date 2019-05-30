@@ -86,3 +86,30 @@ var trivia = {
     divContainer.append(doneButton);
     $("#done-button").on("click", startGame.stopTimer);
   },
+
+  // checking if the user's choice match with the correct answer
+  checkAnswers: function () {
+    var correctAnswer;
+    var userAnswer;
+    var numCorrect = 0;
+    var numIncorrect = 0;
+    var numUnanswered = 0;
+
+    for (var i = 0; i < questions.length; i++) {
+      correctAnswer = questions[i].correct;
+      userAnswer = $('input[id=radio' + i + ']:checked + label').text();
+
+      if (userAnswer === correctAnswer) {
+        numCorrect++;
+      } else if (userAnswer === "") {
+        numUnanswered++;
+      } else if (userAnswer !== correctAnswer) {
+        {
+          numIncorrect++;
+        }
+      }
+    }
+
+    startGame.showResultPage(numCorrect, numIncorrect, numUnanswered);
+  },
+};
