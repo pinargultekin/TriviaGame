@@ -56,3 +56,33 @@ var startGame = {
     $("#unanswered").text("Unanswered: " + numUnanswered);
   }
 };
+
+// Functions
+var trivia = {
+
+  
+  displayQuestions: function () {
+    var divContainer = $("#questions");
+    var answerGroup = $(".form-check");
+    divContainer.append('<h2>Questions</h2>');
+
+    for (var i = 0; i < questions.length; i++) {
+
+      divContainer.append('<div id="question">' + questions[i].question + '</div>' + '<p></p>');
+
+      var answer1 = questions[i].options[0];
+      var answer2 = questions[i].options[1];
+      var answer3 = questions[i].options[2];
+      var answer4 = questions[i].options[3];
+
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer1 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer2 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer3 + '</label></div>');
+      divContainer.append('<div class="form-check"><input class="form-check-input" type="radio" name="radio-group' + i + '" id="radio' + i + '"><label class="form-check-label" id="radio' + i + 'label" for="radio' + i + '">' + answer4 + '</label></div>' + '<br></br>');
+    }
+
+    // submit button 
+    var doneButton = '<button class="btn btn-warning btn-lg" id="done-button" type="submit">Submit</button>';
+    divContainer.append(doneButton);
+    $("#done-button").on("click", startGame.stopTimer);
+  },
