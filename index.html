@@ -17,24 +17,31 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1>FRIENDS TRIVIA GAME</h1>
+
+            <img src="assets/images/LOGO-min.png" alt="friends-logo" width="800">
+            <h1>TRIVIA GAME</h1>
         </header>
 
         <div class="container">
             <div class="row">
-                <div class="card">
+                <div class="card" id="counting">
 
-                    <h2 id="timer">Time Remaining: <span id="display-time"></span></h2>
+                    <h2 id="timer"><span id="display-time"></span></h2>
                     <button id="start" class="btn btn-warning btn-lg">Start Game</button>
                 </div>
             </div>
             <div class="row">
                 <div class="card" id="game">
                     <div id="questions"></div>
-                    <div>
-                        <form id="options"></form>
-                        <!-- <label><input type="radio" name="option" value="Phoebe" id="choices">Phoebe</label> -->
-                        <div id="match"></div>
+                    <div id="options">
+
+                        <div class="hidden" id="results">
+                            <img src="assets/images/congrats.gif" alt="congrats">
+                            <p id="correct-options"></p>
+                            <p id="incorrect-options"></p>
+                            <p id="unanswered"></p>
+
+                        </div>
                     </div>
                 </div>
             </div>

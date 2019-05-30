@@ -7,16 +7,16 @@ font-size: 90px;
 font-family: 'Permanent Marker', cursive;
 padding:20px;
 margin:0 auto;
-color:#75b8ef;
+color:#bdd0e0;
 }
 h2{
 font-size: 45px;
 font-family: 'Permanent Marker', cursive;
 color:#ef7975;
 }
-h3{
+#questions{
     font-family: 'Caveat', cursive;
-    font-size: 45px;
+    font-size: 25px;
     color:#b288fc;
 }
 
@@ -31,6 +31,13 @@ color: #a9e5b9;
     padding:20px;
 }
 #wrapper{
-    width: auto 0;
-    
+    width: 0 auto;
+    height: 0 auto;
+    margin: 0 auto;
+}
+#start{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    color: rgb(255, 116, 2);
+    font-weight: bolder;
 }
