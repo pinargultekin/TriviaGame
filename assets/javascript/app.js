@@ -113,3 +113,38 @@ var trivia = {
     startGame.showResultPage(numCorrect, numIncorrect, numUnanswered);
   },
 };
+
+//Variables
+var questions = [{
+  question: "What was wrong with the couch Ross returned to the store?",
+  options: ["It had stain", "It was torn", "It was cut in half", "The color was wrong"],
+  correct: "It was cut in half"
+}, {
+  question: "What was Phoebe in charge of at Rachel's suprise party?",
+  options: ["Ice and food", "Cups and food", "Cups and ice", "Balloons and ice"],
+  correct: "Cups and ice"
+}, {
+  question: "What is the name of Phoebe's alter-ego?",
+  options: ["Phoebe Neeby", "Regina Falange", "Princess Consuela Bananahammock", "Mrs.Crap Bag"],
+  correct: "Regina Falange"
+}, {
+  question: "Who was Chandler's TV magazine always addressed to?",
+  options: ["Mr. Chandler Bang", "Chandler Bung", "Miss Chanandler Bong", "Chandler Beng"],
+  correct: "Miss Chanandler Bong"
+}, {
+  question: "Which is not a Phoebe song?",
+  options: ["Double-jointed boy", "My mother's ashes", "Terry's a jerk", "My mom, the cat"],
+  correct: "My mom, the cat"
+}, {
+  question: "What was Monica's apartment number?",
+  options: ["16", "24", "20", "19"],
+  correct: "20"
+}, {
+  question: "What is Chandler's address in Yemen?",
+  options: ["15 Yemen Road", "15 Yemen Street", "15 Yemen Avenue", "15 Yemen Drive"],
+  correct: "15 Yemen Road"
+}, {
+  question: "What is the name of Chandler's roommate after Joey moves out?",
+  options: ["George", "David", "Eddie", "Frank"],
+  correct: "Eddie"
+}];
