@@ -14,6 +14,7 @@ By clicking the options user can mark their choices.
 After answers are marked the submit button should be clicked.
 At the end of the game user can see their correct, incorrect and unanswered questions count.
 
+Game Link : https://pinargultekin.github.io/TriviaGame/
 <a name="overview"></a>
 ## Coding Overview
 
