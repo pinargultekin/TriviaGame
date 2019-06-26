@@ -7,12 +7,7 @@
 
 <a name="abstract"></a>
 ## Abstract
-There are 8 questions about Friends tv series. 
-Each question has 4 options. 
-User shoud answer the questions within 2 minutes.
-By clicking the options user can mark their choices.
-After answers are marked the submit button should be clicked.
-At the end of the game user can see their correct, incorrect and unanswered questions count.
+There are eight questions about Friends tv series. Each question has four options. User should answer the questions within 2 minutes. By clicking the options, the user can mark their choices. After answers are marked, the submit button should be clicked. At the end of the game, the user can see their correct, incorrect, and unanswered questions count.
 
 Game Link : https://pinargultekin.github.io/TriviaGame/
 <a name="overview"></a>
